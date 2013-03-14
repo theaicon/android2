@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical">
+	<TextView
+	    android:id="@+id/recipetitle"
+	    android:layout_width="wrap_content"
+	    android:text="Recipe Name"
+	    android:layout_height="wrap_content"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginTop="25dp"></TextView>
+	<ImageView
+	    android:id="@+id/recipebigpicture"
+	    android:layout_width="200dp"
+	    android:layout_height="200dp"
+	    android:layout_centerHorizontal="true"
+	    android:layout_below="@+id/recipetitle"
+	    android:layout_marginTop="25dp"></ImageView>
+	<TextView
+	    android:id="@+id/recipedescriptionheader"
+	    android:text="Description: "
+	    android:layout_below="@+id/recipebigpicture"
+	    android:layout_marginLeft="25dp"
+	    android:layout_marginTop="10dp"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"></TextView>
+	<TextView
+	    android:id="@+id/recipedescription"
+	    android:layout_marginLeft="25dp"
+	    android:text="Recipe Description"
+	    android:layout_below="@+id/recipedescriptionheader"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"></TextView>
+	<TextView
+	    android:id="@+id/recipetaglist"
+	    android:layout_marginTop="10dp"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="25dp"
+	    android:layout_below="@+id/recipedescription"
+	    android:text="Tags: "></TextView>
+	<TextView
+	    android:id="@+id/recipeingredients"
+	    android:text="Ingredients: "
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="25dp"
+	    android:layout_marginTop="10dp"
+	    android:layout_below="@+id/recipetaglist"></TextView>
+	<Button
+	    android:id="@+id/startcooking"
+	    android:text="View This Recipe"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/recipeingredients"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginTop="10dp"></Button>
+	</RelativeLayout>
+</ScrollView>

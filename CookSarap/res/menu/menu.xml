@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/toOptions"
+        android:icon="@drawable/ic_menu_preferences"
+        android:title="Preferences"></item>
+    <item android:id="@+id/search"
+        android:icon="@drawable/ic_menu_search"
+        android:title="Search"></item>
+    <item android:id="@+id/sort"
+        android:icon="@drawable/ic_menu_sort_by_size"
+        android:title="Sort"></item>
+</menu>

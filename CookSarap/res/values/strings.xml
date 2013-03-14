@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, CookbookActivity!</string>
+    <string name="app_name">Cookbook</string>
+    <string name="default_font_size">15dp</string>
+    <string name="search_hint">Search Recipes</string>
+    <string-array name="font_size_options">
+        <item>Tiny</item>
+        <item>Small</item>
+        <item>Medium</item>
+        <item>Large</item>
+        <item>Huge</item>
+    </string-array>
+    <string-array name="font_sizes">
+        <item>7</item>
+        <item>11</item>
+        <item>15</item>
+        <item>20</item>
+        <item>25</item>
+    </string-array>
+    <string-array name="measurement_systems">
+        <item>English</item>
+        <item>Metric</item>
+    </string-array>
+</resources>

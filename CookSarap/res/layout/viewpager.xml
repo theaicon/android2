@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+<TextView
+    android:id="@+id/recipename"
+    android:text="Recipe Name"
+    android:paddingTop="3dp"
+    android:paddingLeft="10dp"
+  	android:layout_width="wrap_content"
+  	android:layout_height="wrap_content"></TextView>
+<android.support.v4.view.ViewPager
+    android:id="@+id/viewpager"
+    android:layout_below="@+id/recipename"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"></android.support.v4.view.ViewPager> 
+<Button
+  	android:id="@+id/nextstep"
+  	android:layout_alignParentRight="true"
+  	android:layout_centerVertical="true"
+  	android:layout_width="50dp"
+  	android:layout_height="50dp"></Button>
+<Button
+  	android:id="@+id/previousstep"
+  	android:layout_alignParentLeft="true"
+  	android:layout_centerVertical="true"
+  	android:layout_width="50dp"
+  	android:layout_height="50dp"></Button> 
+<Button
+    android:id="@+id/finish"
+    android:text="Finish"
+    android:layout_height="50dp"
+    android:layout_width="200dp"
+    android:layout_centerHorizontal="true"
+    android:layout_alignParentBottom="true"
+    android:layout_marginBottom="20dp"></Button>
+</RelativeLayout>

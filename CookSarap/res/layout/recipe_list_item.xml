@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+  	<TextView
+    	android:id="@+id/recipelistentry"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content">
+	</TextView>
+	<TextView
+	    android:id="@+id/recipetag"
+	    android:text="Tags: "
+	    android:layout_width="240dp"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/recipelistentry"
+		android:layout_alignLeft="@+id/recipelistentry">
+	</TextView>
+	<ImageView
+	    android:id="@+id/recipepicture"
+	    android:layout_toLeftOf="@+id/recipelistentry"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"></ImageView>
+	<RatingBar style="?android:attr/ratingBarStyleSmall"
+	    android:id="@+id/reciperating"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentRight="true"
+	    android:layout_alignParentBottom="true"
+	    android:isIndicator="true">
+	</RatingBar>
+</RelativeLayout>

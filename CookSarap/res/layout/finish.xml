@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+<TextView
+    android:text="Enjoy your meal!"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="50dp"></TextView>
+<LinearLayout
+    android:layout_marginTop="200dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+    <TextView
+        android:text="Rate this recipe:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"></TextView>
+	<RatingBar
+    	android:id="@+id/ratingbar"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:gravity="center_horizontal"></RatingBar>
+</LinearLayout>
+<Button
+    android:id="@+id/returnbutton"
+    android:text="Back to Main Menu"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="20dp"></Button>
+
+</LinearLayout>
