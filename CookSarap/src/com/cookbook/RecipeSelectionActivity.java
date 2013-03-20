@@ -189,49 +189,6 @@ public class RecipeSelectionActivity extends ListActivity {
     }
     
     @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-    	switch(item.getItemId()) {
-    	case R.id.toOptions:
-    		Intent toOptions = new Intent(getApplicationContext(), Options.class);
-    		startActivity(toOptions);
-    		return true;
-    	case R.id.search:
-        	// TODO: Adjust for locale
-    		CharSequence[] SearchOptions = {"Recipe Names", "Tags"};
-    		AlertDialog.Builder SearchDialogBuilder = new AlertDialog.Builder(this);
-    		SearchDialogBuilder.setTitle("Search");
-    		SearchDialogBuilder.setItems(SearchOptions, new DialogInterface.OnClickListener() {
-    			@Override
-    			public void onClick(DialogInterface dialog, int which) {
-    				SearchParameter = which;
-    				onSearchRequested();
-    			}
-    		});
-    		AlertDialog SearchAlert = SearchDialogBuilder.create();
-    		SearchAlert.show();
-    		return true;
-    	case R.id.sort:
-    		// TODO: Adjust for locale
-    		CharSequence[] SortOptions = {"By Recipe Name", "By Rating", "By Tags"};
-    		AlertDialog.Builder SortDialogBuilder = new AlertDialog.Builder(this);
-    		SortDialogBuilder.setTitle("Sort");
-    		SortDialogBuilder.setItems(SortOptions, new DialogInterface.OnClickListener() {
-				@Override
-				public void onClick(DialogInterface dialog, int which) {
-					sortRecipes(RecipeList, which); // 0 equals by recipe name, 1 equals by rating, 2 equals by tags
-					RecipeAdapter.notifyDataSetChanged();
-					
-				}
-			});
-    		AlertDialog SortAlert = SortDialogBuilder.create();
-    		SortAlert.show();
-    		return true;
-    	default:
-    		return super.onOptionsItemSelected(item);
-    	}
-    }
-    
-    @Override
     public boolean onSearchRequested() {
     	SearchIsRequested = true;
 		return super.onSearchRequested();
@@ -286,61 +243,6 @@ public class RecipeSelectionActivity extends ListActivity {
 		// Search tags (first tag takes precedent)
 		return null;
 	}
-    
-    // Sorts the recipe list passed in based on the mode
-    private void sortRecipes(String[] RecipeList, int mode)
-    {
-    	if(mode == 0) // Sort by recipe name
-    	{
-    		List<String> TmpList = Arrays.asList(RecipeList);
-    		Collections.sort(TmpList);
-    		int i;
-    		// Convert list back into a string array
-    		for(i=0; i<TmpList.size(); i++)
-        		RecipeList[i] = TmpList.get(i);
-    	}
-    	else if(mode == 1) // Sort by recipe rating
-    	{
-    		List<RecipeAndRating> TmpList = new ArrayList<RecipeAndRating>();
-    		// Get the rating and create a list of recipe and ratings
-    		for(String item : RecipeList)
-    		{
-    			TmpList.add(new RecipeAndRating(item, PreferenceManager.getDefaultSharedPreferences(getApplicationContext()).getFloat(item, 0)));
-    		}
-    		Collections.sort(TmpList);
-    		int i;
-    		// Convert list back into a string array
-    		for(i=0; i<TmpList.size(); i++)
-        		RecipeList[i] = TmpList.get(i).Recipe;
-    	}
-    	else if(mode == 2) // Sort by tags (first tag takes precedent)
-    	{
-    		List<RecipeAndTags> TmpList = new ArrayList<RecipeAndTags>();
-    		AssetManager assetmanager = getAssets();
-    		// Get the rating and create a list of recipe and tags
-    		for(String item : RecipeList)
-    		{
-    			// Change the recipe name to a path
-                String Tmp = "Recipes/";
-                StringBuilder Appender = new StringBuilder(Tmp);
-                Appender.append(item);
-                String RecipeName = Appender.toString();
-    			try {
-            		InputStream Input = assetmanager.open(RecipeName);
-            		TmpList.add(new RecipeAndTags(item, Recipe.scanRecipeForTags(Input)));
-            		Input.close();
-            	} catch (IOException e) {
-            		return;
-            	}
-    		}
-    		Collections.sort(TmpList);
-    		int i;
-    		// Convert list back into a string array
-    		for(i=0; i<TmpList.size(); i++)
-        		RecipeList[i] = TmpList.get(i).Recipe;
-    	}
-    	else return;
-    }
     
     private class RecipeArrayAdapter extends ArrayAdapter<String>
     {

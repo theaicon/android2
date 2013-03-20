@@ -237,40 +237,4 @@ public class RecipeActivity extends FragmentActivity {
     	return true;
     }
     
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-    	switch(item.getItemId()) {
-    		case R.id.toOptions:
-    			Intent toOptions = new Intent(getApplicationContext(), Options.class);
-        		startActivity(toOptions);
-        		return true;
-    		case R.id.JumpToStep:
-    			// Build the list to be shown
-    			CharSequence[] StepList = new CharSequence[CurrentRecipe.NumberOfSteps + 1];
-    			int i;
-    			StepList[0] = "Ingredients";
-    			for(i=1; i<StepList.length; i++)
-    			{
-    				// TODO: Adjust for locales
-    				StringBuilder Builder = new StringBuilder();
-    				Builder.append("Step ");
-    				Builder.append(Integer.toString(i));
-    				StepList[i] = Builder.toString();
-    			}
-    			AlertDialog.Builder StepDialogBuilder = new AlertDialog.Builder(this);
-        		StepDialogBuilder.setTitle("Go to Step");
-        		StepDialogBuilder.setItems(StepList, new DialogInterface.OnClickListener() {
-        			@Override
-        			public void onClick(DialogInterface dialog, int which) {
-        				mViewPager.setCurrentItem(which);
-        			}
-        		});
-        		AlertDialog StepAlert = StepDialogBuilder.create();
-        		StepAlert.show();
-        		return true;
-        	default:
-        		return super.onOptionsItemSelected(item);
-    	}
-    }
-    
 }

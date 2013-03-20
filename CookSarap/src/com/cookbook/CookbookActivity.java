@@ -17,14 +17,12 @@ public class CookbookActivity extends Activity {
     Button CookingTech = (Button) findViewById(R.id.CookingTechniques);
     Button CookingUtil = (Button) findViewById(R.id.CookingUtensils);
     Button WeightsMeasure = (Button) findViewById(R.id.WeightsMeasurements);
-    Button Options = (Button) findViewById(R.id.Options);
     Button AboutUs = (Button) findViewById(R.id.AboutUs);
     
     final Intent ToRecipeSelection = new Intent(this, RecipeSelectionActivity.class);
     final Intent ToCookingTechniques = new Intent(this, CookingTechniques.class);
 	final Intent ToCookingUtilities = new Intent(this, CookingUtilities.class);
 	final Intent ToWeightsMeasure = new Intent(this, WeightsMeasurements.class);
-	final Intent ToOptions = new Intent(this, Options.class);
 	final Intent ToAboutUs = new Intent(this, AboutUs.class);
         
     SelectRecipe.setOnClickListener(new View.OnClickListener() {
@@ -52,13 +50,6 @@ public class CookbookActivity extends Activity {
 		public void onClick(View v) {
 			/* Go to Weights and Measurements guide */
 			startActivity(ToWeightsMeasure);
-		}
-	});
-
-    Options.setOnClickListener(new View.OnClickListener() {
-		public void onClick(View v) {
-			/* Go to Options screen */
-			startActivity(ToOptions);
 		}
 	});
     

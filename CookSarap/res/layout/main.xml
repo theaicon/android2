@@ -33,13 +33,6 @@
         android:text="Weights and Measurements" >
 	</Button>
     <Button
-        android:id="@+id/Options"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="Options" >
-    </Button>
-    <Button
         android:id="@+id/AboutUs"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
