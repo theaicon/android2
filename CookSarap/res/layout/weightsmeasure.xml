@@ -1,8 +1,1020 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical" >
-    
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
 
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+
+
+<TableLayout android:id="@+id/TableLayout01"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:stretchColumns="0,1,2">   
+    <TextView 
+        android:id="@+id/weightsmeasurements"
+  		android:text= "Weights and Measurements"
+  		android:layout_width="wrap_content"
+  		android:layout_height="wrap_content"/>
+    <TableRow
+        android:layout_width="fill_parent">
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text=""/>
+	</TableRow>
+	<TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="Cooking Measurement Conversions"/>
+    <TableRow
+        android:layout_width="fill_parent">
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="1 teaspoon"/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="="/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="1/6 fl. ounce"/>
+	</TableRow>
+	<TableRow
+        android:layout_width="fill_parent">
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="1 Tablespoon"/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="="/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="1/2 fl. ounce"/>
+	</TableRow>
+1 tablespoon = 3 teaspoons
+<TableRow
+        android:layout_width="fill_parent">
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="1 Tablespoon"/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="="/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="1/2 fl. ounce"/>
+	</TableRow>
+<TableRow
+        android:layout_width="fill_parent">
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="1 dessert spoon (UK)"/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="="/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="2.4 teaspoons"/>
+	</TableRow>
+<TableRow
+        android:layout_width="fill_parent">
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="16 tablespoons"/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="="/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="1 cup"/>
+	</TableRow>
+<TableRow
+        android:layout_width="fill_parent">
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="12 tablespoons"/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="="/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="3/4 cup"/>
+	</TableRow>
+<TableRow
+        android:layout_width="fill_parent">
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="10 tblspoons + 2 teaspoons"/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="="/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="2/3 cup"/>
+	</TableRow>
+<TableRow
+        android:layout_width="fill_parent">
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="8 tablespoons"/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="="/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="1/2 cup"/>
+	</TableRow>
+<TableRow
+        android:layout_width="fill_parent">
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="6 tablespoons"/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="="/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="3/8 cup"/>
+	</TableRow>
+<TableRow
+        android:layout_width="fill_parent">
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="5 tblspoons + 1 teaspoon"/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="="/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="1/3 cup"/>
+	</TableRow>
+<TableRow
+        android:layout_width="fill_parent">
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="4 tablespoons"/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="="/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="1/4 cup"/>
+	</TableRow>
+<TableRow
+        android:layout_width="fill_parent">
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="2 tablespoons"/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="="/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="1/8 cup"/>
+	</TableRow>
+<TableRow
+        android:layout_width="fill_parent">
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="2 tblspoons + 2 teaspoons"/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="="/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="1/6 cup"/>
+	</TableRow>
+<TableRow
+        android:layout_width="fill_parent">
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="1 tablespoon"/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="="/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="1/16 cup"/>
+	</TableRow>
+<TableRow
+        android:layout_width="fill_parent">
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="2 cups"/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="="/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="1 pint"/>
+	</TableRow>
+<TableRow
+        android:layout_width="fill_parent">
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="2 pints"/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="="/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="1 quart"/>
+	</TableRow>
+<TableRow
+        android:layout_width="fill_parent">
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="48 teaspoons"/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="="/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="1 cup"/>
+	</TableRow>
+<TableRow
+        android:layout_width="fill_parent">
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="1 cup"/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="="/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="8 fluid ounces"/>
+	</TableRow>
+<TableRow
+        android:layout_width="fill_parent">
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="2 cups"/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="="/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="16 fluid ounces"/>
+	</TableRow>
+<TableRow
+        android:layout_width="fill_parent">
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="1 quart"/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="="/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="2 pints"/>
+	</TableRow>
+<TableRow
+        android:layout_width="fill_parent">
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="4 cups"/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="="/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="1 quart"/>
+	</TableRow>
+<TableRow
+        android:layout_width="fill_parent">
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="4 cups"/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="="/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="32 fluid ounces"/>
+	</TableRow>
+<TableRow
+        android:layout_width="fill_parent">
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="8 cups"/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="="/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="4 pints"/>
+	</TableRow>
+<TableRow
+        android:layout_width="fill_parent">
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="8 cups"/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="="/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="1/2 gallon"/>
+	</TableRow>
+<TableRow
+        android:layout_width="fill_parent">
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="8 cups"/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="="/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="64 fluid ounces"/>
+	</TableRow>
+<TableRow
+        android:layout_width="fill_parent">
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="4 quarts"/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="="/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="1 gallon"/>
+	</TableRow>
+<TableRow
+        android:layout_width="fill_parent">
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="4 quarts"/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="="/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="128 fluid ounces"/>
+	</TableRow>
+<TableRow
+        android:layout_width="fill_parent">
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="1 gallon (gal)"/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="="/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="4 quarts"/>
+	</TableRow>
+<TableRow
+        android:layout_width="fill_parent">
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="16 ounces"/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="="/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="1 pound"/>
+	</TableRow>
+<TableRow
+        android:layout_width="fill_parent">
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="Pinch"/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="="/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="Less than 1/8 teaspoon"/>
+	</TableRow>
+	<TableRow
+        android:layout_width="fill_parent">
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text=""/>
+	</TableRow>
+	<TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="Imperial to Metric"/>
+<TableRow
+        android:layout_width="fill_parent">
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="1/4 teaspoon"/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="="/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="1.25 ml"/>
+	</TableRow>
+<TableRow
+        android:layout_width="fill_parent">
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="1/2 tsp"/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="="/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="2.5 ml"/>
+	</TableRow>
+<TableRow
+        android:layout_width="fill_parent">
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="1 tsp"/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="="/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="5 ml"/>
+	</TableRow>
+<TableRow
+        android:layout_width="fill_parent">
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="1 tablespoon"/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="="/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="15 ml"/>
+	</TableRow>
+<TableRow
+        android:layout_width="fill_parent">
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="1/4 cup"/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="="/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="60 ml"/>
+	</TableRow>
+<TableRow
+        android:layout_width="fill_parent">
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="1/3 cup"/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="="/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="75 ml"/>
+	</TableRow>
+<TableRow
+        android:layout_width="fill_parent">
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="1/2 cup"/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="="/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="125 ml"/>
+	</TableRow>
+<TableRow
+        android:layout_width="fill_parent">
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="2/3 cup"/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="="/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="150 ml"/>
+	</TableRow>
+<TableRow
+        android:layout_width="fill_parent">
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="3/4 cup"/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="="/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="175 ml"/>
+	</TableRow>
+<TableRow
+        android:layout_width="fill_parent">
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="1 cup"/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="="/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="250 ml"/>
+	</TableRow>
+<TableRow
+        android:layout_width="fill_parent">
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="1 1/8 cups"/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="="/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="275 ml"/>
+	</TableRow>
+<TableRow
+        android:layout_width="fill_parent">
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="1 1/4 cups"/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="="/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="300 ml"/>
+	</TableRow>
+<TableRow
+        android:layout_width="fill_parent">
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="1 1/2 cups"/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="="/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="350 ml"/>
+	</TableRow>
+<TableRow
+        android:layout_width="fill_parent">
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="1 2/3 cups"/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="="/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="400 ml"/>
+	</TableRow>
+<TableRow
+        android:layout_width="fill_parent">
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="1 3/4 cups"/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="="/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="450 ml"/>
+	</TableRow>
+<TableRow
+        android:layout_width="fill_parent">
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="2 cups"/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="="/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="500 ml"/>
+	</TableRow>
+<TableRow
+        android:layout_width="fill_parent">
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="2 1/2 cups"/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="="/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="600 ml"/>
+	</TableRow>
+<TableRow
+        android:layout_width="fill_parent">
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="3 cups"/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="="/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="750 ml"/>
+	</TableRow>
+<TableRow
+        android:layout_width="fill_parent">
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="3 2/3 cups"/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="="/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="900 ml"/>
+	</TableRow>
+<TableRow
+        android:layout_width="fill_parent">
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="4 cups"/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="="/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="1 liter"/>
+	</TableRow>
+	<TableRow
+        android:layout_width="fill_parent">
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text=""/>
+	</TableRow>
+	<TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="Weight Conversion"/>
+<TableRow
+        android:layout_width="fill_parent">
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="1/2 oz"/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="="/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="15g"/>
+	</TableRow>
+<TableRow
+        android:layout_width="fill_parent">
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="1 oz"/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="="/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="25 g"/>
+	</TableRow>
+<TableRow
+        android:layout_width="fill_parent">
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="2 oz"/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="="/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="50 g"/>
+	</TableRow>
+<TableRow
+        android:layout_width="fill_parent">
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="3 oz"/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="="/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="75 g"/>
+	</TableRow>
+<TableRow
+        android:layout_width="fill_parent">
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="4 oz"/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="="/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="100 g"/>
+	</TableRow>
+<TableRow
+        android:layout_width="fill_parent">
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="6 oz"/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="="/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="175 g"/>
+	</TableRow>
+<TableRow
+        android:layout_width="fill_parent">
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="7 oz"/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="="/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="200 g"/>
+	</TableRow>
+<TableRow
+        android:layout_width="fill_parent">
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="8 oz"/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="="/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="250 g"/>
+	</TableRow>
+<TableRow
+        android:layout_width="fill_parent">
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="9 oz"/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="="/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="275 g"/>
+	</TableRow>
+<TableRow
+        android:layout_width="fill_parent">
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="10 oz"/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="="/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="300 g"/>
+	</TableRow>
+<TableRow
+        android:layout_width="fill_parent">
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="12 oz"/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="="/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="350 g"/>
+	</TableRow>
+<TableRow
+        android:layout_width="fill_parent">
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="1 lb"/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="="/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="500 g"/>
+	</TableRow>
+<TableRow
+        android:layout_width="fill_parent">
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="1 1/2"/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="="/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="750 g"/>
+	</TableRow>
+<TableRow
+        android:layout_width="fill_parent">
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="2 lb"/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="="/>
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="1 kg"/>
+	</TableRow>
+    
+</TableLayout>
+</ScrollView>
 </LinearLayout>
