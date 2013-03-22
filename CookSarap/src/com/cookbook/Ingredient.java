@@ -6,7 +6,7 @@ class Ingredient {
 	
 	enum UnitOfMeasurement
 	{
-		teaspoon, tablespoon, cup, can, pint, gallon, fluid_ounce, kilo, pack, pc, bundle, bowl, clove, small, large, chopped, undefined;
+		teaspoon, tablespoon, cup, can, pint, pinch, gallon, fluid_ounce, kilo, pack, pc, bundle, bowl, clove, small, medium, large, chopped, lb, liter, undefined;
 	}
 	
 	String Fraction;
